@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main .dataTable {
+  margin-top: 4em;
+}
+
+.container-fluid {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.dataTable {
+  display: flex;
+  flex-grow: 2;
+  
+}
+.tbContainer {
+  width: 100%;
+  /* border: solid 1px #a3a3a3; */
+}
+
+table th, td {
+  border: 1px solid #a3a3a3;
+}
+
+.tb-1 {
+  margin-right: 0.2em;
+}
+.tb-2 {
+  margin-left: 0.2em;
+}
+.tb-2 thead {
+  background: #eee;
+  color: #333;
+  border-top: solid 1px #a3a3a3;
+}
+
+.tb-2 p {
+  padding: 5px;
+  border: solid 1px #a3a3a3;
+  font-weight: bold;
+}
+.tb-2 tbody .txtbold {
+  font-weight: bold;
+}

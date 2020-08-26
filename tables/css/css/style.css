@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 14px;
+  font-family: var(--lightFont);
+  background: var(--bgColor);
+}
+
+/* Global Styles */
+:root {
+  --primaryColor: #ef5350;
+  --secondaryColor: #42a5f5;
+  --bgColor: #fafafa;
+  --lightDark: #212121;
+  --boldFont: 'Roboto', sans-serif;
+  --lightFont: 'Montserrat', sans-serif; 
+  --shadow: 0 1px 5px rgb(227, 242, 253);
+  --transition: linear 0.5s ease-in;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.myBtn {
+  background: transparent;
+  border: solid 1px var(--primaryColor);
+  color: var(--primaryColor);
+  font-weight: bold;
+}
+.myBtn:hover {
+  color: #fff;
+  background: var(--primaryColor);
+}
+
+
+
+
+
+
+nav {
+  background: #fff;
+}
+nav ul li a{
+  color: var(--lightDark);
+  font-weight: 600;
+}
+nav .brand-logo {
+  color: var(--lightDark);
+  font-family: var(--boldFont);
+}
+
