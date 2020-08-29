@@ -263,6 +263,7 @@ article .content .tasks .task-card p{
   margin-top: 1em;
   height: 100%;
   text-align: center;
+  background: #fff;
 }
 
 .works-card .card-title {
@@ -312,7 +313,7 @@ article .content .tasks .task-card p{
   color: #333;
 }
 
-form select {
+form > .select {
   background: var(--lightGradient)!important;
   border-radius: 30px !important;
   border: solid 1px var(--primaryColor)!important;
@@ -327,11 +328,9 @@ form select {
 form select:focus {
   outline: none;
 }
-form select .selected {
-  background: var(--darkGradient)!important;
-}
-form select option {
-  font-size: 1.2em!important;
+
+.select option {
+  font-size: 1.3em;
 }
 
 .withdraw form input::placeholder {

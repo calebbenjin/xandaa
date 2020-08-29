@@ -1,24 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
   <link rel="stylesheet" href="css/themify-icons.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Adcess</title>
 </head>
-<body>
-  
-  <h1>Hello World</h1>
 
+<body>
+
+  <header>
+    <div class="nav-line"></div>
+    <nav>
+      <div class="container">
+        <a href="#" class="logo sub-title">
+          <img src="asset/logo/240x100.png" alt="" width="150" height="150">
+        </a>
+        <div class="nav-link close">
+          <ul id="navMobile" >
+            <div class="toggle-close">
+              <div class="line1"></div>
+              <div class="line2"></div>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="works.html">How it works</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="reg.html" class="btn myBtn">Sign up</a></li>
+          </ul>
+        </div>
+        <div class="bugger-show">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
   
+
+  <section class="reg-card">
+    <!-- <img src="asset/logo/240x100.png" alt="" width="150" height="150"> -->
+    <div class="container-form">
+      <div class="form-title">
+        <h5>Sign Up</h5>
+        <p>Start Earning from day one working with <b>Xandaa</b></p>
+      </div>
+      <form>
+        <input type="text" placeholder="🎅Username">
+        <input type="email" placeholder="✉️Email">
+        <input type="password" placeholder="🔐Password">
+        <input type="password" placeholder="🔐Confirm Password">
+        <p>Already have an account <a href="login.html">🔑Login</a></p>
+        <button type="submit" class="btn myBtn btn-large">Sign Up</button>
+      </form>
+    </div>
+  </section>
+
   <!--JavaScript at end of body for optimized loading-->
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <!--JavaScript at end of body for optimized loading-->
   <script type="text/javascript" src="js/app.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      ltr:true,
+      loop: true,
+      margin: 20,
+      autoplay:true,
+      autoplayTimeout:6000,
+      autoplayHoverPause:true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
 </body>
+
 </html>

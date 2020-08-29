@@ -68,7 +68,7 @@ p {
   font-weight: bold;
   color: var(--lightDark);
   text-align: center;
-  /* margin-bottom: 1em; */
+  margin-bottom: 1em;
   position: relative;
   text-transform: capitalize;
 }
@@ -108,6 +108,31 @@ p {
 }
 .btn {
   font-weight: bold;
+}
+
+.btnAction {
+  border: solid 2px  #ff006e;
+  background: #fff;
+  color: #ff006e;
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+.btnAction:hover {
+  background: #ff006e;
+  color: #fff;
+}
+.btnAction-bg {
+  border: solid 2px  #ff006e;
+  background: #ff006e;
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+.btnAction-bg:hover {
+  background: #fff;
+  color: #ff006e;
 }
 
 .nav-line {
@@ -270,6 +295,67 @@ nav .brand-logo {
   border-radius: 50%;
 }
 
+/* Register Form Page */
+.reg-card {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+.reg-card .container-form {
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  padding: 20px 40px;
+  width: 30%;
+  height: auto;
+  margin: 3% auto;
+  background: #fff;
+}
+.reg-card img {
+  width: 50px;
+  height: auto;
+  margin: 10% auto;
+}
+
+.form-title h5 {
+  font-family: var(--boldFont); 
+}
+.form-title p {
+  font-size: 16px;
+}
+.reg-card .form-title{
+  margin-bottom: 2em;
+}
+
+form input {
+  background: var(--lightGradient)!important;
+  border-radius: 30px !important;
+  border: solid 1px var(--primaryColor)!important;
+  padding: 10px 10px 10px 30px !important;
+  width: 90% !important;
+  margin-bottom: 1em !important;
+  font-weight: bold;
+  color: #333;
+  box-shadow: var(--shadow)!important;
+}
+
+form button {
+  width: 100%;
+  margin: 1em 0;
+}
+form p {
+  font-size: 16px;
+}
+
+form select:focus {
+  outline: none;
+}
+
+form input::placeholder {
+  color: #5d5d5dee;
+  font-weight: bold;
+}
+
 /* Ads Plans */
 .ads-plans {
   padding: 4em 0;
@@ -357,7 +443,25 @@ nav .brand-logo {
   margin-top: 2em;
 }
 
+.about-section .about-content{
+  margin-top: 3em;
+  padding-left: 3em;
+}
+
+.about-section .about-content p{
+  margin-bottom: 1em;
+}
+
+
+
 /* How it Works */
+.how-it-works {
+  text-align: center;
+}
+
+.how-it-works  .myBtn {
+  margin-top: 1em;
+}
 .works-section .card .card-title{
   color: #333;
   font-family: var(--boldFont);
@@ -617,6 +721,7 @@ footer {
   .about-section .about-content{
     margin-top: 10px;
   }
+
 
   .slider-section .title {
     font-size: 2em;
