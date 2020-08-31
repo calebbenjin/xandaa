@@ -45,8 +45,9 @@ p {
 }
 
 .content .content-title {
-  margin-top: 5em;
-  font-family: var(--boldFont);
+  margin-top: 6em;
+  /* font-family: var(--boldFont); */
+  font-size: 1.5em;
 }
 
 .myBtn {
@@ -161,8 +162,18 @@ main article .nav {
   width: 100%;
 }
 
+
 article .content {
   margin-top: 5em;
+}
+
+.user-avata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-avata p{
+  margin-right: 25px;
 }
 
 main article .nav .user-avata img {
@@ -179,11 +190,13 @@ main article .nav h6{
 }
 
 article .content .title {
-  font-family: var(--boldFont);
+  /* font-family: var(--boldFont); */
+  /* margin-top: 5em; */
 }
 article .content .task-title {
   display: flex;
   justify-content: space-between;
+  padding-top: 2em;
 }
 article .content .task-title .day {
   background: linear-gradient(to right, var(--darkGradient), var(--lightGradient));
@@ -197,12 +210,52 @@ article .content .task-title .day {
 }
 
 article .content .section-text {
-  padding: 40px;
+  padding: 20px;
   margin: 2% 0;
   border-radius: 5px;
   box-shadow: var(--shadow);
   font-size: 16px;
+  z-index: -9;
+  position: relative;
 }
+
+.section-text .dashboard {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.section-text .dashboard div h5 {
+  line-height: 0.9;
+}
+
+.section-text .dashboard .box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  /* margin-bottom: 1em; */
+  box-shadow: var(--shadow);
+  width: 100%;
+  margin: 1em 1em;
+  height: 140px;
+
+}
+.section-text .ref {
+  white-space: wrap;
+  padding: 10px;
+  box-shadow: var(--shadow);
+  margin: 10px;
+  border-radius: 30px;
+}
+
+.section-text .instruction p {
+  padding-top: 5px;
+}
+
+.section-text .instruction {
+  padding:  0 20px;
+}
+
 article .content .tasks .task-card {
   box-shadow: var(--shadow);
   border-radius: 10px;
@@ -299,10 +352,11 @@ article .content .tasks .task-card p{
 .withdraw .title-text {
   margin-bottom: 2em;
 }
-.withdraw form {
+ form {
   width: 100% !important;
 }
-.withdraw form input {
+
+form input {
   background: var(--lightGradient)!important;
   border-radius: 30px !important;
   border: solid 1px var(--primaryColor)!important;
@@ -311,6 +365,7 @@ article .content .tasks .task-card p{
   margin-bottom: 1em !important;
   font-weight: bold;
   color: #333;
+  box-shadow: var(--shadow)!important;
 }
 
 form > .select {
@@ -333,8 +388,30 @@ form select:focus {
   font-size: 1.3em;
 }
 
-.withdraw form input::placeholder {
-  color: #333;
+form button {
+  width: 100%;
+  margin: 1em 0;
+}
+form p {
+  font-size: 16px;
+}
+
+form .btc-address {
+  padding: 0 20px;
+  transition: all 0.3s ease-in;
+}
+form .btc-address h6 {
+  font-family: var(--boldFont);
+  margin-bottom: 1em;
+  padding: 10px;
+}
+form .btc-address h6:hover {
+  box-shadow: var(--shadow);
+  border-radius: 30px;
+}
+
+form input::placeholder {
+  color: #5d5d5dee;
   font-weight: bold;
 }
 
@@ -343,6 +420,36 @@ form select:focus {
   color: var(--primaryColor);
 }
 
+/* Settings Page */
+.settings {
+  width: 80%;
+  height: 100%;
+  margin: 3% auto;
+  box-shadow: var(--shadow);
+  padding: 2em 4em;
+  background: #fff;
+  /* text-align: center; */
+  border-radius: 10px;
+}
+
+.settings form button {
+  width: 20%;
+  padding: 10px;
+  box-shadow: var(--shadow);
+  background: linear-gradient(to right, var(--lightGradient), var(--darkGradient));
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  color: #333;
+  font-size: 1.5em;
+}
+
+.settings form button:hover {
+  background: #fff;
+}
+.settings h4 {
+  margin-bottom: 1em;
+}
 
 .bugger-show {
   display: none;
@@ -393,5 +500,12 @@ form select:focus {
     background: #fff;
     text-align: center;
     border-radius: 10px;
+  }
+
+  .section-text .dashboard {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* align-items: center; */
   }
 }
