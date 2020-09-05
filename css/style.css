@@ -655,6 +655,7 @@ footer .links a:hover {
     z-index: 9;
     background: rgba(121, 121, 121, 0.35);
     transition: var(--transition);
+    display: none;
   }
 
   .show {
