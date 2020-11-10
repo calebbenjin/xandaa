@@ -217,10 +217,11 @@ article .content .task-title {
 
 article .content .wallet-dashboard {
   padding: 3rem 6rem;
-  margin-top: -1rem;
+  margin-top: 2rem;
   font-size: 16px;
+  padding-top: 6rem;
   z-index: -9;
-  box-shadow: var(--shadow);
+  /* box-shadow: var(--shadow); */
 }
 
 .wallet-dashboard .wallet-container {
@@ -761,9 +762,6 @@ form input::placeholder {
     margin-top: -1rem;
     border-radius: var(--raduis);
     z-index: -9;
-    position: relative;
-    background: var(--lightGradient);
-    box-shadow: var(--shadow);
   }
 
   .wallet-dashboard .wallet-container {
@@ -779,7 +777,6 @@ form input::placeholder {
   }
   article .content .wallet-dashboard h6 {
     color: #494949;
-    /* white-space: nowrap; */
     text-transform: capitalize;
     font-size: 1rem;
   }
@@ -789,7 +786,6 @@ form input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
   }
 
   .wallet-list a {
@@ -802,7 +798,7 @@ form input::placeholder {
     color: var(--primaryColor);
     width: 100%;
     display: inline-block;
-    background: #fff;
+    /* background: #fff; */
     margin: 0 5px;
   }
 
