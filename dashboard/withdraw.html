@@ -4,22 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Import Google Icon Font-->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <!-- FontAwesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
     <!--Import materialize.css-->
-    <link
+    <!-- <link
       type="text/css"
       rel="stylesheet"
       href="../css/materialize.min.css"
       media="screen,projection"
-    />
+    /> -->
     <link rel="stylesheet" href="../css/themify-icons.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Adcess</title>
@@ -29,7 +23,10 @@
       <aside>
         <div class="active-balance">
           <span class="active-plan">
-            <h6>baby plan</h6>
+            <img
+              src="../asset/logo/240x100.png"
+              alt="" class="logo"
+            />
           </span>
         </div>
         <ul class="nav-list">
@@ -93,52 +90,6 @@
                 height="150"
               />
             </a>
-
-            <div class="user-avata">
-              <div class="dropdown dropleft">
-                <div
-                  class="notify"
-                  id="dropdownMenuLink"
-                  data-toggle="dropdown"
-                  aria-haspopup="false"
-                  aria-expanded="false"
-                >
-                  <i class="fas fa-bell"></i>
-                  <span class="aler"></span>
-                </div>
-                <div
-                  class="dropdown-menu dropleft"
-                  aria-labelledby="dropdownMenuLink"
-                >
-                  <a class="dropdown-item" href="#">Payment successful</a>
-                  <a class="dropdown-item" href="#"
-                    >Thank you for working with us</a
-                  >
-                  <a class="dropdown-item" href="#">Payment successful</a>
-                </div>
-              </div>
-              <div class="dropdown">
-                <div
-                  class="notify"
-                  id="dropdownMenuLink"
-                  data-toggle="dropdown"
-                  aria-haspopup="false"
-                  aria-expanded="false"
-                >
-                  <img src="../asset/user.jpg" alt="" width="50" height="50" />
-                </div>
-                <div
-                  class="dropdown-menu dropleft"
-                  aria-labelledby="dropdownMenuLink"
-                >
-                  <a class="dropdown-item" href="#">John Doe</a>
-                  <hr />
-                  <a class="dropdown-item" href="#">Profile Settings</a>
-                  <hr />
-                  <a class="dropdown-item" href="#">Log out</a>
-                </div>
-              </div>
-            </div>
             <div class="bugger-show">
               <div class="line"></div>
               <div class="line"></div>
@@ -148,23 +99,29 @@
         </div>
         <section class="content">
           <div class="container">
-            <h4 class="content-title">Withdraw</h4>
-            <hr />
+            <div class="dashboard">
+              <div class="text"> 
+                <h2>Welcome back, <span>Johnvoco98</span></h2>
+              </div>
+              <div class="user-profile">
+                <img src="../asset/user.jpg" alt="" />
+              </div>
+            </div>
+            <h3 class="withdraw-title">How much do you want to Deposit?</h3>
             <div class="withdraw">
               <div class="title-text">
-                <h5 class="title">Withdraw your profit</h5>
-                <h6>We are so excited to pay you.</h6>
+                <h5 class="title">Enter Amount to withdraw</h5>
               </div>
               <form>
-                <input
-                  type="text"
-                  value="💲$23,567"
-                  placeholder="Enter Amount"
-                />
-                <p>Make sure you copy your <b>Address</b> correctly.</p>
-                <input type="text" placeholder="🔢Enter wallet Address" />
-                <button type="submit" class="btn btn-large myBtn">
-                  Withdraw
+                <input type="text" placeholder="Enter Amount"/>
+                <div class="btc-address">
+                  <p>Copy Wallet address to complete transaction</p>
+                  <h6>yRQYnWzskCZUxPwaQupWki</h6>
+                </div>
+                <!-- <p>Make sure you copy your <b>Address</b> correctly.</p> -->
+                <!-- <input type="text" placeholder="🔢Enter wallet Address" /> -->
+                <button type="submit">
+                  proceed with Withdraw
                 </button>
               </form>
             </div>
@@ -175,7 +132,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/app.js"></script>
