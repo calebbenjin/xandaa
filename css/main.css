@@ -206,7 +206,7 @@ header .nav-link ul li a {
     z-index: 99;
     height: 100%;
     background: var(--primaryColor);
-    width: 40%;
+    width: 55%;
     padding-top: 4rem;
     transform: translate(-100%);
     transition: var(--transition);
