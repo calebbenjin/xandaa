@@ -68,14 +68,34 @@
           <div class="container">
             
             <h3 class="withdraw-title">Post your product and reach out to over 1,000 people round the globle</h3>
-            <div class="withdraw">
+            <div class="withdraw advert-form">
               <div class="title-text">
                 <h5 class="title">Enter advert details</h5>
               </div>
+              <div class="cover-img">
+                <form action="" class="img-upload">
+                  <label for="file-ip-1" class="file">
+                    <div class="cover-banner">
+                      <img id="file-ip-1-preview" src="" id="img-cover"> 
+                      <div class="cover-text">
+                        <div>
+                          <h4>Click to</h4><h3>Upload business cover image</h3> 
+                        </div>  
+                      </div>
+                      </div>
+                  </label>
+                  <input type="file"  name="img_one" id="file-ip-1" accept="image/*" onchange="showPreviewOne(event);">
+                </form>
+              </div>
               <form>
-                <input type="text" placeholder="Business name" required/>
-                <input type="text" placeholder="www.company.com or (facebook, instagram) link" required/>
-                <input type="file" class="custom-file-inpu" required>
+                <div class="input-field">
+                  <i class="fas fa-building"></i>
+                  <input type="text" placeholder="Business name" required/>
+                </div>
+                <div class="input-field">
+                  <i class="fas fa-external-link-alt"></i>
+                  <input type="text" placeholder="www.company.com or (facebook, instagram) link" required/>
+                </div>
                 <button type="submit">
                   publish advert
                 </button>
@@ -91,6 +111,6 @@
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/app.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>

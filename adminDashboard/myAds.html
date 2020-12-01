@@ -8,6 +8,8 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <!--Import materialize.css-->
+    <!-- <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/> -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -46,8 +48,8 @@
           <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> logout</a></li>
         </ul>
         <!-- <div class="ads">
-          <a href="#" class="adsBtn">Advertise your business</a>
-        </div> -->
+      <a href="#" class=" adsBtn">Advertise your business</a>
+    </div> -->
       </aside>
       <article>
         <div class="nav">
@@ -56,10 +58,12 @@
               <img
                 src="../asset/logo/240x100.png"
                 alt=""
+                width="150"
+                height="150"
               />
             </a>
             
-            <!-- <div class="user-avata">
+            <div class="user-avata">
               <div class="dropdown dropleft">
                 <div class="notify " id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
                   <i class="fas fa-bell"></i>
@@ -71,7 +75,20 @@
                   <a class="dropdown-item" href="#">Payment successful</a>
                 </div>
               </div>
-            </div> -->
+              <div class="dropdown">
+                <div class="notify " id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                  <img src="../asset/user.jpg" alt="" width="50" height="50" />
+                </div>
+                <div class="dropdown-menu dropleft" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">John Doe</a>
+                  <hr>
+                  <a class="dropdown-item" href="#">Profile Settings</a>
+                  <hr>
+                  <a class="dropdown-item" href="#">Log out</a>
+                </div>
+              </div>
+              
+            </div>
             <div class="bugger-show">
               <div class="line"></div>
               <div class="line"></div>
@@ -80,75 +97,65 @@
           </div>
         </div>
         <section class="content">
-          <div class="contai">
-            
-            <div class="wallet-dashboard">
-              <div class="dashboard">
-                <div class="text"> 
-                  <h2>Welcome back, <span>Johnvoco98</span></h2>
-                </div>
-                <div class="user-profile">
-                  <img src="../asset/user.jpg" alt="" />
-                </div>
-              </div>
-              <div class="wallet-container row">
-                <div class="col-md-4 col-6 mx-auto">
-                  <div class="notify-box box-1">
-                    <i class="fas fa-coins"></i>
-                    <h5>Account ballance</h5>
-                    <h3><span>$</span>346,990</h3>
-                  </div>
-                </div>
-                <div class="col-md-4 col-6 mx-auto">
-                  <div class=" notify-box box-2">
-                    <i class="fas fa-hand-holding-usd"></i>
-                    <h5>Potential Bounce</h5>
-                    <h3><span>$</span>156,90</h3>
-                  </div>
-                </div>
-                <div class="col-md-4 col-12 mx-auto">
-                  <div class="notify-box ">
-                    <h5>Current Pack</h5>
-                    <i class="fas fa-shield-alt mt-2"></i>
-                    <p><a href="#" class="core-btn btn">Upgrade to gold pro</a></p>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="wallet-list">
-                <div class="row">
-                  <div class="col-md-6 mx-auto">
-                    <div class="sponsor-link">
-                      <div class="link">
-                        <h5>Your Sponsor link</h5>
-                        <div class="link-container">
-                          xandaa/signup/john89l
-                        </div>
-                        <a href="#" class="core-btn btn">Invite people</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mx-auto">
-                    <div class="countdown">
-                      <div class="members text-center">
-                        <h3 class="counter">1245678</h3>
-                      <h5>Members joined after you</h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="container">
-            <div class="post-ads">
-              <div class="text">
-                <h2>Advertise your business with Xanda</h2>
-                <h3>And reach out to over 1,000 people and double your sales.</h3>
-                <a href="#" class="ref-btn">Start Advertising Now!!</a>
-              </div>
-              <!-- <img src="/asset/slider1.jpg" alt=""> -->
+            <div class="ads-title">
+              <h3><i class="fas fa-chart-line"></i> My Adverts</h3>
+              <a href="advert.html" class="core-btn btn">Post your business advert</a>
             </div>
+            <hr />
+            <div class="tasks">
+              <div class="row">
+                <div class="col-md-3 col-6 mx-auto">
+                  <div class="task-card">
+                    <img src="../asset/products/2651-CHAISE.jpg" alt="">
+                    <div class="task-body">
+                      <h5>Godeon Fashion</h5>
+                      <div class="foot">
+                        <a href="#" class="publish"  data-toggle="modal" data-target="#faceModal">Published</a>
+                        <h6 class="amount">Free</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-6 mx-auto">
+                  <div class="task-card">
+                    <img src="../asset/products/7DrQjq.jpg" alt="">
+                    <div class="task-body">
+                      <h5>Kitchen World</h5>
+                      <div class="foot">
+                        <a href="#" class="publish">Published</a>
+                        <h6 class="amount">free</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-6 mx-auto">
+                  <div class="task-card">
+                    <img src="../asset/products/cKY4xO.jpg" alt="">
+                    <div class="task-body">
+                      <h5>Coven Designers</h5>
+                      <div class="foot">
+                        <a href="#" class="publish">Published</a>
+                        <h6 class="amount">free</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-6 mx-auto">
+                  <div class="task-card">
+                    <img src="../asset/products/HAIRweb1-master675.jpg" alt="">
+                    <div class="task-body">
+                      <h5>Rose FashionHouse</h5>
+                      <div class="foot">
+                        <a href="#" class="publish">Published</a>
+                        <h6 class="amount">free</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="ref-link">
               <div class="text">
                 <h2>Earn passive income with Xanda</h2>
@@ -161,11 +168,32 @@
       </article>
     </main>
 
+    <div
+      class="modal fade"
+      id="faceModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="faceModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <div>
+              <button type="button" class="publish" data-dismiss="modal">
+                Login facebook to publish
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
   </body>
 </html>

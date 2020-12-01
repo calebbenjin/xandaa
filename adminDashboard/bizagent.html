@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <!-- <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/> -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
   <link rel="stylesheet" href="../css/themify-icons.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Adcess</title>
@@ -20,10 +19,7 @@
   <aside>
     <div class="active-balance">
       <span class="active-plan">
-        <img
-          src="../asset/logo/240x100.png"
-          alt="" class="logo"
-        />
+        <h6>baby plan</h6>
       </span>
     </div>
     <ul class="nav-list">
@@ -55,7 +51,7 @@
           />
         </a>
         
-        <!-- <div class="user-avata">
+        <div class="user-avata">
           <div class="dropdown dropleft">
             <div class="notify " id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
               <i class="fas fa-bell"></i>
@@ -67,8 +63,20 @@
               <a class="dropdown-item" href="#">Payment successful</a>
             </div>
           </div>
+          <div class="dropdown">
+            <div class="notify " id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+              <img src="../asset/user.jpg" alt="" width="50" height="50" />
+            </div>
+            <div class="dropdown-menu dropleft" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">John Doe</a>
+              <hr>
+              <a class="dropdown-item" href="#">Profile Settings</a>
+              <hr>
+              <a class="dropdown-item" href="#">Log out</a>
+            </div>
+          </div>
           
-        </div> -->
+        </div>
         <div class="bugger-show">
           <div class="line"></div>
           <div class="line"></div>
@@ -78,46 +86,51 @@
     </div>
     <section class="content">
       <div class="container">
-        <div class="section-text">
-          <!-- <p class="ref"><b>Referral link: </b>https://xandaa.com?refemail=johndoe@gmail.com</p> -->
-          <div class="instruction">
-            <h3 class="title"><i class="fas fa-tasks fa-1x"></i> <b>Daily task.</b></h3>
-            <p><span class="username"><b>Hello, John Doe</b></span> we are so excited to have you here today, Your task today is to just publish this few Affilliate companies and make sure they have a like also invite your friends to like and share your post. Thank you.</p>
+        <div class="task-title">
+          <div>
+            <h4 class="title">Dashboard</h4>
+          </div>
+          <div class="days">
+            <h4 class="day">Day-1</h4>
           </div>
         </div>
         <hr>
-        <div class="tasks">
+        <div class="section-text">
+         <div class="dashboard">
+           <div class="wallet box b-1">
+             <h5>Bitcoin Wallet</h5>
+             <p>BTC</p>
+           </div>
+           <div class="last-deposit box b-2">
+             <h5>$ 12450</h5>
+             <p>Last Deposit</p>
+           </div>
+           <div class="last-withdraw box b-3">
+             <h5>$ 289.005</h5>
+             <p>Last Widthdraw</p>
+           </div>
+           <div class="ballance box b-1">
+             <span>Ballance:</span>
+             <h5>00.0045 BTC</h5>
+             <h5>239,009 USD</h5>
+           </div>
+         </div>
+          <hr>
+          <p class="ref"><b>Referral link: </b>https://xandaa.com?refemail=johndoe@gmail.com</p>
+        </div>
+        <hr>
+        <div class="upload-task">
+          <input type="file" class="custom-file-input">
+        </div>
+
+        <!-- <div class="tasks">
           <div class="row">
-            <div class="col-md-3 col-6 mx-auto">
+            <div class="col m3">
               <div class="task-card">
-                <img src="../asset/products/1-1.jpg" alt="">
+                <img src="../asset/bg-2.jpg" alt="">
                 <div class="task-body">
-                  <h5>Jolex Inc</h5>
-                  <div class="foot">
-                    <a href="#" class="publish" data-toggle="modal" data-target="#faceModal">Publish</a>
-                    <h6 class="amount">$1.5</h6>
-                  </div>
-                </div>
-              </div>
-              
-            </div>
-            <div class="col-md-3 col-6 mx-auto">
-              <div class="task-card">
-                <img src="../asset/products/2651-CHAISE.jpg" alt="">
-                <div class="task-body">
-                  <h5>Godeon Fashion</h5>
-                  <div class="foot">
-                    <a href="#" class="publish"  data-toggle="modal" data-target="#faceModal">Publish</a>
-                    <h6 class="amount">$1.5</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-6 mx-auto">
-              <div class="task-card">
-                <img src="../asset/products/7DrQjq.jpg" alt="">
-                <div class="task-body">
-                  <h5>Kitchen World</h5>
+                  <h5>Jolex</h5>
+                  <p>Jolex Sales Top designers round the works shop with jolex Now</p>
                   <div class="foot">
                     <a href="#" class="publish">Publish</a>
                     <h6 class="amount">$1.5</h6>
@@ -125,11 +138,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3 col-6 mx-auto">
+            <div class="col m3">
               <div class="task-card">
-                <img src="../asset/products/cKY4xO.jpg" alt="">
+                <img src="../asset/bg-1.jpg" alt="">
                 <div class="task-body">
-                  <h5>Coven Designers</h5>
+                  <h5>Jolex</h5>
+                  <p>Jolex Sales Top designers round the works shop with jolex Now</p>
                   <div class="foot">
                     <a href="#" class="publish">Publish</a>
                     <h6 class="amount">$1.5</h6>
@@ -137,11 +151,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3 col-6 mx-auto">
+            <div class="col m3">
               <div class="task-card">
-                <img src="../asset/products/HAIRweb1-master675.jpg" alt="">
+                <img src="../asset/adsbg.jpg" alt="">
                 <div class="task-body">
-                  <h5>Rose FashionHouse</h5>
+                  <h5>Jolex</h5>
+                  <p>Jolex Sales Top designers round the works shop with jolex Now</p>
                   <div class="foot">
                     <a href="#" class="publish">Publish</a>
                     <h6 class="amount">$1.5</h6>
@@ -149,35 +164,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3 col-6 mx-auto">
+            <div class="col m3">
               <div class="task-card">
-                <img src="../asset/products/1 (1).jpg" alt="">
+                <img src="../asset/pexels-startup-stock-photos-212286.jpg" alt="">
                 <div class="task-body">
-                  <h5>Zetta Tech</h5>
-                  <div class="foot">
-                    <a href="#" class="publish">Publish</a>
-                    <h6 class="amount">$1.5</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-6 mx-auto">
-              <div class="task-card">
-                <img src="../asset/products/parfois-italy-store-728.jpg" alt="">
-                <div class="task-body">
-                  <h5>parfois italy</h5>
-                  <div class="foot">
-                    <a href="#" class="publish">Publish</a>
-                    <h6 class="amount">$1.5</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-6 mx-auto">
-              <div class="task-card">
-                <img src="../asset/products/wp1866286.jpg" alt="">
-                <div class="task-body">
-                  <h5>Jolex Store</h5>
+                  <h5>Jolex</h5>
+                  <p>Jolex Sales Top designers round the works shop with jolex Now</p>
                   <div class="foot">
                     <a href="#" class="publish">Publish</a>
                     <h6 class="amount">$1.5</h6>
@@ -186,31 +178,18 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
   </article>
 </main>
 
-<div class="modal fade" id="faceModal" tabindex="-1" role="dialog" aria-labelledby="faceModalTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-body text-center">
-      <div>
-        <button type="button" class="publish" data-dismiss="modal">Login facebook to publish</button>
-      </div>
-        
-      </div>
-     
-    </div>
-  </div>
-</div>
   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="../js/app.js"></script>
 </body>
 </html>
