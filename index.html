@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <title>Xandaa</title>
+    <meta name="description" content="Xandaa is an Advertising agency.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="Xandaa">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
     <!--Import Google Icon Font-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -13,11 +20,14 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <!-- AOS JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/themify-icons.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Adcess</title>
   </head>
 
   <body>
@@ -59,7 +69,7 @@
             <a href="busiPage.html" class="core-btn btn">Advertise your business</a>
             <a href="agentPage.html" class="core-btn btn aff">Become an Affilate agent</a>
           </div>
-          <div class="mockup-img">
+          <div class="mockup-img" data-aos="fade-up">
             <img src="asset/mockup/use3.png" alt="">
           </div>
         </div>
@@ -104,7 +114,7 @@
     <section class="business-section section">
       <div class="container">
         <div class="busi-flex">
-          <div class="image">
+          <div class="image" data-aos="fade-up">
             <img src="asset/mockup/use4.png" alt="">
           </div>
           <div class="text">
@@ -123,15 +133,16 @@
     <section class="agent-section section">
       <div class="container">
         <div class="busi-flex">
-          <div class="image">
-            <img src="asset/mockup/use2.png" alt="">
-          </div>
+         
           <div class="text">
             <div class="section-head">
               <h2 class="title">Helping our affilate agents to earn passive income for life</h2>
               <h5 class="small-title">Become an affilate agent and start earning for life.</h5>
               <a href="agentPage.html" class="btn core-btn"><i class="fas fa-user"></i> become and agent</a>
             </div>
+          </div>
+          <div class="image" data-aos="fade-up">
+            <img src="asset/mockup/use2.png" alt="">
           </div>
         </div>
       </div>
@@ -143,7 +154,7 @@
       <div class="container">
         <div class="join-us">
           <div class="section-head">
-            <h2 class="title">Join Over 10,000+ Affilate agent and start earning for life</h2>
+            <h2 class="title" data-aos="fade-up">Join Over 10,000+ Affilate agent and start earning for life</h2>
             <a href="agentPage.html" class="btn core-btn"><i class="fas fa-user"></i> Get Started Now</a>
           </div>
           <!-- <h1>Join Over 10,000+ Affilate agent and start earning for life</h1>
@@ -160,17 +171,77 @@
           <h2 class="title">Our top affilate companies</h2>
         </div>
         <div class="row companies">
-          <div class="col-md-3">
-            <h2>Company-1</h2>
+          <div class="col-md-4 col-lg-4">
+            <!-- <img src="asset/company/Asset 10.png" alt=""> -->
           </div>
-          <div class="col-md-3">
-            <h2>Company-2</h2>
+          <div class="col-md-4 col-lg-4">
+            <!-- <img src="asset/company/Asset 11.png" alt=""> -->
           </div>
-          <div class="col-md-3">
-            <h2>Company-3</h2>
+          <div class="col-md-4 col-lg-4">
+            <!-- <img src="asset/company/Asset 12.png" alt=""> -->
           </div>
-          <div class="col-md-3">
-            <h2>Company-4</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-client section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="title">Our Happy Business and Affilate agent</h2>
+          <h5 class="small-title">Hear what the world is saying about us.</h5>
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div class="customer" data-aos="fade-up">
+            <img src="asset/lady-img.jpg" alt=""/>
+            <div class="text">
+              <h4 class="name">Mary Doe</h4>
+              <small class="country">London</small>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Corrupti soluta quo ea dolor cum velit repellendus. Architecto
+                in ullam ea?
+              </p>
+            </div>
+          </div>
+          <div class="customer" data-aos="fade-up">
+            <img src="asset/user.jpg" alt="" />
+            <div class="text">
+              <h4 class="name">Kolin Mark</h4>
+              <small class="country">Canada</small>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Corrupti soluta quo ea dolor cum velit repellendus. Architecto
+                in ullam ea?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="title">Get in touch</h2>
+          <h5 class="small-title">If you have any question please feel free to contact us, we reply in record time</h5>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <div class="contact-details">
+              <img src="asset/customer_service.svg" class="contact-img" alt="">
+            </div>
+          </div>
+          <div class="col-md-5 mx-auto">
+            <div class="contact-form">
+              <h3 class="form-title">Send a message</h3>
+              <form action="">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Subjects">
+                <textarea name="" id="" cols="30" rows="3" placeholder="Message"></textarea>
+                <button type="submit" class="btn contact-btn">Send message</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -246,25 +317,39 @@
     <script type="text/javascript" src="js/app.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000, 
+        once: false,
+        easing: 'ease'
+      });
+    </script>
     <script>
       $('.owl-carousel').owlCarousel({
-        ltr: true,
         loop: true,
         margin: 20,
-        autoplay: true,
-        autoplayTimeout: 6000,
-        autoplayHoverPause: true,
+        nav: false,
+        autoplay:true,
+        // autoWidth:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
         responsive: {
-          0: {
+          0:{
             items: 1,
-          },
-          600: {
-            items: 2,
-          },
-          1000: {
-            items: 3,
-          },
+            nav:true
         },
+        600:{
+            items:2,
+            nav:false
+        },
+        1000:{
+            items:2,
+            nav:true,
+            loop:true
+        },
+      }
       })
     </script>
   </body>

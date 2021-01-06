@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <script src="https://cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
+    <link rel="stylesheet" href="../css/themify-icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Adcess</title>
+  </head>
+  <body>
+    <main>
+      <aside>
+        <div class="active-balance">
+          <span class="active-plan">
+            <img
+              src="../asset/logo/240x100.png"
+              alt="" class="logo"
+            />
+          </span>
+        </div>
+        <ul class="nav-list">
+          <li><a href="index.html"> <i class="fas fa-cogs"></i> Dashboard</a></li>
+          <li id="dropdown-nav"><a href="#"><i class="fas fa-tasks nav-icon"></i> Users</a>
+            <ul class="dropdown-list">
+              <li><a href="users.html"><i class="fas fa-users nav-icon"></i> All users</a></li>
+              <li><a href="affilate_users.html"><i class="fas fa-user-alt nav-icon"></i> Affilate users</a></li>
+              <li><a href="business_users.html"><i class="fas fa-user-tie nav-icon"></i> Business users</a></li>
+              <li><a href="banded_users.html"><i class="fas fa-user-cog nav-icon"></i> Banded users</a></li>
+              <li><a href="unverify_users.html"><i class="fas fa-user-tag nav-icon"></i> Unverify users</a></li>
+              <li><a href="send_email.html"><i class="fas fa-envelope nav-icon"></i> Send email</a></li>
+            </ul>
+          </li>
+          <li id="dropdown-finance"><a href="#"><i class="fas fa-tasks nav-icon"></i> Finance</a>
+            <ul class="finance-list">
+              <li><a href="all_deposit.html"><i class="fas fa-user-alt nav-icon"></i> All deposits</a></li>
+              <li><a href="pending_deposit.html"><i class="fas fa-users nav-icon"></i> Pending deposits</a></li>
+              <li><a href="rejected_deposits.html"><i class="fas fa-user-tie nav-icon"></i> Rejected deposits</a></li>
+              <li><a href="all_withdraw.html"><i class="fas fa-user-cog nav-icon"></i> All withdrawals</a></li>
+              <li><a href="pending_withdraw.html"><i class="fas fa-user-tag nav-icon"></i> Pending withdrawals</a></li>
+              <li><a href="rejected_withdarw.html"><i class="fas fa-envelope nav-icon"></i> Rejected withdrawals</a></li>
+              <li><a href="transactions.html"><i class="fas fa-envelope nav-icon"></i> transactions</a></li>
+            </ul>
+          </li>
+          <li id="page-dropdown"><a href="#"><i class="fas fa-tasks nav-icon"></i> Pages</a>
+            <ul class="page-list">
+              <li><a href="pages.html"><i class="fas fa-laptop nav-icon"></i> Home page</a></li>
+              <li><a href="create_page.html"><i class="fas fa-cogs nav-icon"></i> Testimonie Page</a></li>
+            </ul>
+          </li>
+          <li><a href="manager.html"><i class="fas fa-cogs nav-icon"></i> Frontend manager</a></li>
+          <li><a href="/index.html"><i class="fas fa-sign-out-alt"></i> logout</a></li>
+        </ul>
+      </aside>
+      <article>
+        <div class="nav">
+          <div class="container">
+            <a href="index.html" class="brand-logo">
+              <img
+                src="../asset/logo/240x100.png"
+                alt=""
+              />
+            </a>
+            <div class="bugger-show">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <section class="content">
+          <h4 class="nav-back"><a href="users.html"> <i class="fas fa-arrow-left"></i> back Users/</a></h4>
+          <div class="row">
+            <div class="col-md-7 mx-auto">
+              <div class="user-edit-form">
+                <div class="card-head mb-4">
+                  <h3>edit home page</h3>
+                </div>
+                <form action="">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-outline-secondary" type="button">Page Section</button>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                      <option selected>Choose...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="input-field">
+                    <input type="text" placeholder="Page Title">
+                  </div>
+                  <div class="input-field">
+                    <input type="file" placeholder="Page Title">
+                  </div>
+                  <div class="input-field">
+                    <textarea name="" id="" cols="10" rows="2" placeholder="Message"></textarea>
+                  </div>
+                  <button class="core-btn">Update</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+        </section>
+      </article>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script>
+      CKEDITOR.replace( 'editor1' );
+    </script>
+    <script>
+  
+      function showPreviewOne(event){
+        if(event.target.files.length > 0){
+          let src = URL.createObjectURL(event.target.files[0]);
+          let preview = document.getElementById("file-ip-1-preview");
+          preview.src = src;
+          preview.style.display = "block";
+          document.querySelector('.cover-text').style.display = 'none'
+        } 
+      }
+
+      function myImgRemoveFunctionOne() {
+        document.getElementById("file-ip-1-preview").src = "https://i.ibb.co/ZVFsg37/default.png";
+      }
+  
+    </script>
+  </body>
+</html>

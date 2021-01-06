@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/themify-icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Adcess</title>
+  </head>
+  <body>
+    <main>
+      <aside>
+        <div class="active-balance">
+          <span class="active-plan">
+            <img
+              src="../asset/logo/240x100.png"
+              alt="" class="logo"
+            />
+          </span>
+        </div>
+        <ul class="nav-list">
+          <li><a href="index.html"> <i class="fas fa-cogs"></i> Dashboard</a></li>
+          <li id="dropdown-nav"><a href="#"><i class="fas fa-tasks nav-icon"></i> Users</a>
+            <ul class="dropdown-list">
+              <li><a href="users.html"><i class="fas fa-users nav-icon"></i> All users</a></li>
+              <li><a href="affilate_users.html"><i class="fas fa-user-alt nav-icon"></i> Affilate users</a></li>
+              <li><a href="business_users.html"><i class="fas fa-user-tie nav-icon"></i> Business users</a></li>
+              <li><a href="banded_users.html"><i class="fas fa-user-cog nav-icon"></i> Banded users</a></li>
+              <li><a href="unverify_users.html"><i class="fas fa-user-tag nav-icon"></i> Unverify users</a></li>
+              <li><a href="send_email.html"><i class="fas fa-envelope nav-icon"></i> Send email</a></li>
+            </ul>
+          </li>
+          <li id="dropdown-finance"><a href="#"><i class="fas fa-tasks nav-icon"></i> Finance</a>
+            <ul class="finance-list">
+              <li><a href="all_deposit.html"><i class="fas fa-user-alt nav-icon"></i> All deposits</a></li>
+              <li><a href="pending_deposit.html"><i class="fas fa-users nav-icon"></i> Pending deposits</a></li>
+              <li><a href="rejected_deposits.html"><i class="fas fa-user-tie nav-icon"></i> Rejected deposits</a></li>
+              <li><a href="all_withdraw.html"><i class="fas fa-user-cog nav-icon"></i> All withdrawals</a></li>
+              <li><a href="pending_withdraw.html"><i class="fas fa-user-tag nav-icon"></i> Pending withdrawals</a></li>
+              <li><a href="rejected_withdarw.html"><i class="fas fa-envelope nav-icon"></i> Rejected withdrawals</a></li>
+              <li><a href="transactions.html"><i class="fas fa-envelope nav-icon"></i> transactions</a></li>
+            </ul>
+          </li>
+          <li id="page-dropdown"><a href="#"><i class="fas fa-tasks nav-icon"></i> Pages</a>
+            <ul class="page-list">
+              <li><a href="pages.html"><i class="fas fa-laptop nav-icon"></i> All pages</a></li>
+              <li><a href="create_page.html"><i class="fas fa-cogs nav-icon"></i> create page</a></li>
+            </ul>
+          </li>
+          <li><a href="manager.html"><i class="fas fa-cogs nav-icon"></i> Frontend manager</a></li>
+          <li><a href="/index.html"><i class="fas fa-sign-out-alt"></i> logout</a></li>
+        </ul>
+      </aside>
+      <article>
+        <div class="nav">
+          <div class="container">
+            <a href="index.html" class="brand-logo">
+              <img
+                src="../asset/logo/240x100.png"
+                alt=""
+              />
+            </a>
+            <div class="bugger-show">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <section class="content">
+          <h4 class="nav-back"><a href="users.html"> <i class="fas fa-arrow-left"></i> back Users/</a></h4>
+          <div class="row">
+            <div class="col-md-5 mx-auto">
+              <div class="user-edit-card">
+                <div class="user-img">
+                  <img src="img/user.jpg" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="username">John Mouke</h3>
+                  <ul>
+                    <li><span><i class="fas fa-envelope"></i> Email: </span> JohnMouck@gmail.com</li>
+                    <li><span><i class="fas fa-phone"></i>  phone: </span> 90767368628</li>
+                    <li><span><i class="fas fa-wallet"></i> wallet address: </span>nrd79938h8d87hw7d89</li>
+                    <li><span><i class="fas fa-box"></i> business name: </span> AccessCrow LTD</li>
+                    <li><span><i class="fas fa-building"></i> bank name: </span> Access bank</li>
+                    <li><span><i class="fas fa-user-tag"></i> account name: </span> John Dmoe</li>
+                    <li><span><i class="fas fa-user-tag"></i> account number: </span> 986748663289</li>
+                    <li><span><i class="fas fa-user-tag"></i> account BVN: </span> 986748663289</li>
+                    <li><span><i class="fas fa-paper-plane"></i> active plan: </span> Gold pro</li>
+                    <li><span><i class="fas fa-universal-access"></i> Investment status: </span> <div id="spinner">
+                      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                      Running...
+                    </div></li>
+                    <li><span><i class="fas fa-calendar-check"></i> Investment Date: </span>23/12/2020</li>
+                    <li><span><i class="fas fa-calendar-check"></i> Due Date: </span>23/12/2020</li>
+                    <li><span><i class="fas fa-pen"></i> Send Message: </span> <button type="submit" class="btn-approve" data-toggle="modal" data-target="#emailModal">Message</button></li>
+                    <li><span><i class="fas fa-pen"></i> Edit ballance: </span> <button type="submit" class="btn-approve"  data-toggle="modal" data-target="#ballanceModal">Edit</button></li>
+                    <!-- Edit usder Ballance Modal -->
+                    <div class="modal fade" id="ballanceModal" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <h4 class="text-center">Are you sure you want to approve this payment?</h4>
+                            <form action="">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="input-field">
+                                    <select name="" id="" class="form-control">
+                                      <option value=""><span>+</span> Add </option>
+                                      <option value=""><span>-</span> Subtract</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-field">
+                                    <select name="" id="" class="form-control">
+                                      <option value="">Deposit - <b>$298</b></option>
+                                      <option value="">Earning - <b>$298</b></option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="input-field">
+                                <input type="text" placeholder="Enter Amount">
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Canc</button>
+                            <button type="button" class="btn btn-primary">proceed payment</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Send Message Modal -->
+                    <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <h3>Send Message</h3>
+                            <form action="">
+                              <div class="input-field">
+                                <input type="text" placeholder="Subject title">
+                              </div>
+                              <div class="input-field">
+                                <textarea name="" id="" cols="30" rows="2" placeholder="Message"></textarea>
+                              </div>
+                              <button type="submit" class="btn-approve">Send message</button>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Canc</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+              
+            </div>
+            <div class="col-md-7 mx-auto">
+              <div class="user-edit-form">
+                <h3>User edit form</h3>
+                <form action="">
+                  <div class="input-field">
+                    <input type="text" placeholder="Full Name">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-field">
+                        <input type="email" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-field">
+                        <input type="tel" placeholder="Phone">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input-field">
+                    <input type="text" placeholder="Business Name">
+                  </div>
+                  <div class="input-field">
+                    <input type="text" placeholder="Wallet Address">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 mx-auto">
+                      <div class="input-field">
+                        <input type="text" placeholder="Bank Name">
+                      </div>
+                    </div>
+                    <div class="col-md-6 mx-auto">
+                      <div class="input-field">
+                        <input type="text" placeholder="Account Name ">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 mx-auto">
+                      <div class="input-field">
+                        <input type="text" placeholder="Account Number">
+                      </div>
+                    </div>
+                    <div class="col-md-6 mx-auto">
+                      <div class="input-field">
+                        <input type="text" placeholder="BVN">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="transaction-history">
+                <div class="card-head" id="transToggle">
+                  <h3>transaction-history</h3>
+                  <p><i class="fas fa-sort-up"></i></p>
+                </div>
+                <div class="container trans-tbox">
+                  <div class="t-deposit tbox">
+                    <h4>Total Deposit</h4>
+                    <h3>$289,998</h3>
+                    <a href="#" class="btn-approve" data-toggle="modal" data-target="#depositModal">view details</a>
+                    <div class="modal fade" id="depositModal" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <div class="modal-header">
+                              <h4>Deposit Records</h4>
+                            </div>
+                            <div class="table-responsive">
+                              <table class="table table-striped">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Ref</th>
+                                    <th scope="col">name</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Gateway</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Time</th>
+                                    <th scope="col">Actions</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>34783fe3224</td>
+                                    <td>john Doe</td>
+                                    <td>$100,00</td>
+                                    <td>Btc</td>
+                                    <td>22/Oct/2020</td>
+                                    <td>1:23am</td>
+                                    <td class="update">
+                                      <button type="submit" class="btn-approve" data-toggle="modal" data-target="#approveModal">Approve</button>
+                                      <button type="submit" class="btn-reject bg-danger" data-toggle="modal" data-target="#rejectModal">Reject</button>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>34783fe3224</td>
+                                    <td>john Doe</td>
+                                    <td>$100,00</td>
+                                    <td>Btc</td>
+                                    <td>22/Oct/2020</td>
+                                    <td>1:23am</td>
+                                    <td class="update">
+                                      <button type="submit" class="btn-approve" data-toggle="modal" data-target="#approveModal">Approve</button>
+                                      <button type="submit" class="btn-reject bg-danger" data-toggle="modal" data-target="#rejectModal">Reject</button>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="t-withdraw tbox">
+                    <h4>Total Withdrawals</h4>
+                    <h3>$289,998</h3>
+                    <a href="#" class="btn-approve" data-toggle="modal" data-target="#withdrawModal">view details</a>
+                    <div class="modal fade" id="withdrawModal" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <div class="modal-header">
+                              <h4>Withdrawals Records</h4>
+                            </div>
+                            <div class="table-responsive">
+                              <table class="table table-striped">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Ref</th>
+                                    <th scope="col">name</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Gateway</th>
+                                    <th scope="col">Date</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>34783fe3224</td>
+                                    <td>john Doe</td>
+                                    <td>$100,00</td>
+                                    <td>Btc</td>
+                                    <td>22/Oct/2020</td>
+                                  </tr>
+                                  <tr>
+                                    <td>34783fe3224</td>
+                                    <td>john Doe</td>
+                                    <td>$100,00</td>
+                                    <td>Btc</td>
+                                    <td>22/Oct/2020</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="t-earning tbox">
+                    <h4>Total Earnings</h4>
+                    <h3>$289,998</h3>
+                    <a href="#" class="btn-approve" data-toggle="modal" data-target="#earnModal">view details</a>
+                    <div class="modal fade" id="earnModal" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <div class="modal-header">
+                              <h4>Earnings Records</h4>
+                            </div>
+                            <div class="table-responsive">
+                              <table class="table table-striped">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Ref</th>
+                                    <th scope="col">name</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Gateway</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Time</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>34783fe3224</td>
+                                    <td>john Doe</td>
+                                    <td>$100,00</td>
+                                    <td>Btc</td>
+                                    <td>22/Oct/2020</td>
+                                    <td>1:23am</td>
+                                  </tr>
+                                  <tr>
+                                    <td>34783fe3224</td>
+                                    <td>john Doe</td>
+                                    <td>$100,00</td>
+                                    <td>Btc</td>
+                                    <td>22/Oct/2020</td>
+                                    <td>1:23am</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="c-plan tbox">
+                    <h4>Current Plan</h4>
+                    <h3>Bronze</h3>
+                    <a href="#" class="btn-approve" data-toggle="modal" data-target="#planModal">view details</a>
+                    <div class="modal fade" id="planModal" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <div class="modal-header">
+                              <h4><b>Current Plans</b></h4>
+                            </div>
+                            <div class="table-responsive">
+                              <table class="table table-striped">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Ref</th>
+                                    <th scope="col">name</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Plan</th>
+                                    <th scope="col">Date</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>34783fe3224</td>
+                                    <td>john Doe</td>
+                                    <td>$100,00</td>
+                                    <td>Bronze</td>
+                                    <td>22/Oct/2020</td>
+                                  </tr>
+                                  <tr>
+                                    <td>34783fe3224</td>
+                                    <td>john Doe</td>
+                                    <td>$100,00</td>
+                                    <td>Bronze</td>
+                                    <td>22/Oct/2020</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </section>
+      </article>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <script>
+  
+      function showPreviewOne(event){
+        if(event.target.files.length > 0){
+          let src = URL.createObjectURL(event.target.files[0]);
+          let preview = document.getElementById("file-ip-1-preview");
+          preview.src = src;
+          preview.style.display = "block";
+          document.querySelector('.cover-text').style.display = 'none'
+        } 
+      }
+
+      function myImgRemoveFunctionOne() {
+        document.getElementById("file-ip-1-preview").src = "https://i.ibb.co/ZVFsg37/default.png";
+      }
+  
+    </script>
+  </body>
+</html>

@@ -113,7 +113,13 @@ h4 {
     line-height: 1;
   }
 }
+.modal-title {
+  color: var(--primaryColor);
+}
 
+.modal-body {
+  padding: 20px;
+}
 .core-btn {
   margin: 1rem 0;
   background: #d8f3dc;
@@ -163,7 +169,7 @@ main {
   display: flex;
   flex-direction: row;
   height: 100vh;
-  position: fixed;
+  position: relative;
   left: 0;
   right: 0;
   height: 100%;
@@ -173,9 +179,12 @@ main {
 main aside {
   background: var(--primaryColor);
   box-shadow: var(--shadow);
-  width: 20%;
+  width: 15%;
   height: 100%;
+  position: fixed;
+  z-index: 99;
 }
+
 main aside .active-balance {
   text-align: center;
   padding: 10px;
@@ -227,7 +236,7 @@ aside .ads .adsBtn{
 
 main article {
   width: 100%;
-  overflow-y: scroll;
+  margin-left: 11rem;
 }
 
 main article .nav .container{
@@ -245,7 +254,7 @@ main article .nav {
 }
 
 article .content {
-  margin-top: 6em;
+  margin: 6em 4rem;
 }
 
 .user-avata {
@@ -274,8 +283,8 @@ main article .nav h6{
   margin-top: 10px;
 }
 .user-profile img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   box-shadow: var(--shadow);
   border: solid 6px var(--offColorOne);
@@ -287,20 +296,25 @@ main article .nav .user-avata .notify {
   margin: 1.3rem 4rem;
   position: relative;
 }
-.notify .fas {
-  font-size: 1.5rem;
-  color: var(--primaryColor);
+.notification .fas {
+  font-size: 2rem;
 }
 
-.notify .aler {
+
+.notification {
+  position: relative;
+}
+
+.notification .icon {
   position: absolute;
   top: -2px;
   right: -5px;
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background: var(--actionColor);
 }
+
 
 .content hr {
    background: #fff !important;
@@ -364,18 +378,6 @@ article .content .wallet-dashboard {
   margin-top: 1rem;
 }
 
-.wallet-dashboard .wallet-container {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row; */
-} 
-
-article .content .wallet-dashboard h3 {
-  color: var(--offColorOne);
-  font-weight: 900;
-  margin: 1rem 0;
-}
 
 .wallet-list {
   margin-top: 4rem;
@@ -433,8 +435,8 @@ article .content .wallet-dashboard h3 {
   border-radius: 10px;
   color: #d8f3dc;
 }
- .dashboard .text h2 {
-  font-size: 2rem;
+ .dashboard .text h3 {
+  font-size: 1.5rem;
 }
  .dashboard .text span {
   color: var(--offColorOne);
@@ -1072,12 +1074,12 @@ form input::placeholder {
   }
   main aside {
     color: #fff;
-    width: 55%;
+    width: 50%;
     position: fixed;
     left: 0;
     top: 0;
     z-index: 99;
-    padding: 10px;
+    padding: 20px;
     box-shadow: var(--shadow);
     transform: translate(-100%);
     transition: var(--transition);
@@ -1093,6 +1095,7 @@ form input::placeholder {
   
   main article {
     width: 100%;
+    margin: 0;
   }
   main article .nav {
     z-index: 99;
@@ -1105,21 +1108,27 @@ form input::placeholder {
     padding-right: 0;
   }
 
-  main article .nav .user-avata img{
-    display: none;
+  article .content {
+    margin: 6em 0rem;
   }
+  
+
 
   article .nav .brand-logo img {
     width: 50%;
     margin-top: 0.6rem;
   }
   
-  main article .nav .user-avata .notify {
-    margin: 1.3rem 2rem;
+  .wallet-dashboard .dashboard .text h3{
+    font-size: 1rem;
   }
-  .notify .fas {
+
+  .notification {
+    margin-right: 1rem;
+  }
+  .notification .fas {
     font-size: 1.5rem;
-    color: var(--primaryColor);
+    
   }
 
   .wallet-list .countdown {
@@ -1176,11 +1185,11 @@ form input::placeholder {
     align-items: center;
   }
 
-.dashboard .text h2 {
+.dashboard .text h3 {
     font-size: 1.5rem;
   }
  .dashboard .text {
-    width: 200px;
+    width: 100px;
   }
 
   article .content .wallet-dashboard {
@@ -1200,8 +1209,8 @@ form input::placeholder {
   }
 
   .user-profile img {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     box-shadow: var(--shadow);
     border: solid 3px var(--offColorOne);

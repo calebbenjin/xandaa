@@ -111,7 +111,7 @@ h4 {
 }
 
 .section-head {
-  width: 60%;
+  width: 70%;
   margin: 20px auto;
 }
 
@@ -286,7 +286,7 @@ header .nav-link ul li a {
 
 @media(max-width: 768px) {
   .landing-section {
-    background-image: linear-gradient(to right, #081c15ec, #081c15f1), url(../asset/mockup/use2.png);
+    background-image: linear-gradient(to right, rgba(8, 28, 21, 0.787), rgba(215, 238, 230, 0.431)), url(../asset/mockup/use2.png);
     background-position: center;
     background-size: cover;
     border-top-right-radius: 50%;
@@ -508,6 +508,122 @@ header .nav-link ul li a {
   .subscribe-section .sub-form form input {
     border-radius: 6px;
   }
+}
+
+/* Testimonie Sections
+================================================== */
+.section-client .customer {
+  background: #ffff;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.section-client .section-head {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-client .customer .text {
+  width: 70%;
+}
+
+.section-client .customer .name {
+  margin-bottom: 0;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+@media(max-width: 768px) {
+  .section-client .customer {
+   text-align: center;
+    display: flex;
+    padding: 15px 5px;
+    flex-direction: column;
+  }
+}
+
+.section-client .customer .country {
+  font-weight: 900;
+  text-transform: capitalize;
+  padding: 2px 4px;
+  background: var(--primaryColor);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.section-client .customer img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+
+}
+
+/* Contact form
+================================================== */
+
+.contact-section {
+  background: #d8f3dc;
+}
+.contact-section .section-head {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.contact-section .section-head .small-title{
+  color: var(--primaryColor);
+}
+
+.contact-section .contact-form {
+  background: #fff;
+  box-shadow: var(--shadow);
+  padding: 30px;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.contact-section .contact-form form input {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  padding: 10px;
+  font-weight: 900;
+  border: solid 1px #cccc;
+  border-radius: 6px;
+}
+
+.contact-section .contact-form .form-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--primaryColor);
+}
+
+.contact-form form textarea {
+  padding: 10px;
+}
+.contact-form .contact-btn {
+  background: var(--primaryColor);
+  color: #fff;
+  width: 100%;
+  text-transform: capitalize;
+  font-weight: 900;
+  padding: 10px 0;
+  transition: var(--transition);
+}
+
+.contact-form .contact-btn:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+
+.contact-section .contact-img {
+  width: 80%;
+  margin-bottom: 1rem;
 }
 
 
